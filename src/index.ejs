@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Mocha Browser Test</title>
+    <link rel="stylesheet" href="node_modules/mocha/mocha.css">
+  </head>
+  <body>
+    <div id="mocha"></div>
+    <script src="node_modules/mocha/mocha.js"></script>
+    <script src="node_modules/chai/chai.js"></script>
+
+    <script>mocha.setup('bdd')</script>
+
+    <!-- load code you want to test here -->
+    <script src="./src/index.test.js"></script>
+    <!-- load your test files here -->
+
+    <script>
+      mocha.run();
+    </script>
+    <script>
+      const myFuncTwo = () => {
+        console.log('myFuncTwo ran, and it is an arrow function stored in a const')
+      }
+      myFuncTwo()
+    </script>
+
+    <div id="app"></div>
+  </body>
+</html>

@@ -1,0 +1,35 @@
+{
+  "name": "mocha-poi-browser-node",
+  "version": "0.0.1",
+  "description": "Starter boilerplate for developing, testing, and building modules for the browser and Node. Poi for dev, Mocha for tests.",
+  "main": "index.js",
+  "scripts": {
+    "start": "poi",
+    "build:browser": "poi build --format umd --module-name build.umd.js",
+    "build:node": "poi build --format cjs --module-name build.cjs.js",
+    "test:browser": "mocha src/index.test.js",
+    "test:node": "mocha src/index.test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/coryarmbrecht/poi-mocha-browser-node.git"
+  },
+  "keywords": [
+    "mocha",
+    "poi"
+  ],
+  "author": "Cory Armbrecht",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/coryarmbrecht/poi-mocha-browser-node/issues"
+  },
+  "homepage": "https://github.com/coryarmbrecht/poi-mocha-browser-node#readme",
+  "devDependencies": {
+    "chai": "4.1.2",
+    "mocha": "5.0.0",
+    "poi": "9.6.13",
+    "poi-preset-react": "9.2.1",
+    "poi-preset-transform-test-files": "10.0.0",
+    "react": "16.2.0"
+  }
+}
